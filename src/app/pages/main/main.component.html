@@ -1,0 +1,287 @@
+<!-- header -->
+<div class="container-fluid header-fluid">
+    <nav class="navbar navbar-default " role="navigation">
+        <div class="nav-btn" tabIndex="2" (click)="navMenu()"  >
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="javascript:;">
+                <img src="./assets/img/logo.svg">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse2" id="example-navbar-collapse" [ngClass]="{'navbar-collapse2-show': menuStep, 'navbar-collapse2-hidden': !menuStep}">
+        <!-- <div class="navbar-collapse" > -->
+            <ul class="nav navbar-nav" [ngClass]="{'nav-jp': languageS == 'jp'}">
+                <li class="li-active anchor" anchor='anchor1' (mouseover)="anchorHover('home', true)" (mouseleave)="anchorHover('home', false)" [ngClass]="{'li': (navStep=='home' && navStatus)}">
+                    <a href="javascript:;" >{{'main.home' | translate}}</a>
+                </li>
+                <li class="anchor" anchor='anchor2' (mouseover)="anchorHover('function', true)" (mouseleave)="anchorHover('function', false)" [ngClass]="{'li': (navStep=='function' && navStatus)}">
+                    <a href="javascript:;" >{{'main.function' | translate}}</a>
+                </li>
+                <li class="anchor" anchor='anchor3' (mouseover)="anchorHover('ecology', true)" (mouseleave)="anchorHover('ecology', false)" [ngClass]="{'li': (navStep=='ecology' && navStatus)}">
+                    <a href="javascript:;" >{{'main.ecology' | translate}}</a>
+                </li>
+                 <li class="anchor" anchor='anchor4' (mouseover)="anchorHover('token', true)" (mouseleave)="anchorHover('token', false)" [ngClass]="{'li': (navStep=='token' && navStatus)}">
+                    <a href="javascript:;" >{{'main.token' | translate}}</a>
+                </li>
+                 <li class="anchor" anchor='anchor5' (mouseover)="anchorHover('route', true)" (mouseleave)="anchorHover('route', false)" [ngClass]="{'li': (navStep=='route' && navStatus)}">
+                    <a href="javascript:;" >{{'main.route' | translate}}</a>
+                </li>
+                 <li class="anchor" anchor='anchor6' (mouseover)="anchorHover('team', true)" (mouseleave)="anchorHover('team', false)" [ngClass]="{'li': (navStep=='team' && navStatus)}">
+                    <a href="javascript:;" >{{'main.team' | translate}}</a>
+                </li>
+                <li class="language" (click)="anchorHover('language', true)" (mouseover)="anchorHover('language', true)" (mouseleave)="anchorHover('language', false)">
+                    <a >
+                        {{languageDe}}
+                        <img [ngClass]="{'lan-img1': !languageStatus, 'lan-img2': languageStatus }" src="./assets/img/sanjiao.png" />
+                    </a>
+                    <div *ngIf="languageStatus">
+                        <p (click)="setLanguage('en')">English</p>
+                        <p (click)="setLanguage('jp')">日本語</p>
+                        <p (click)="setLanguage('kr')">한글</p>
+                        <!-- <p (click)="setLanguage('zh')">中文</p> -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+  </nav>
+</div>
+
+<!-- <div class="container-fluid two-box bg1"> -->
+    <!-- 我们的愿景 -->
+    <div class="bg1-1 bg1-2" name='anchor1' role='anchor'>
+        <div class="welcome-text font2">
+            <div class="container">
+                <div class="row1-tip1">{{'main.bg1T3' | translate}}</div>
+                <p>{{'main.bg1T2' | translate}}</p>
+                <!-- <a *ngIf="languageS == 'zh'" href="https://cdn.ipbank.vip/pdf/ipbank_wp_cn.pdf" target="_blank" class="btn">{{'main.bg1T1' | translate}}</a> -->
+                <a *ngIf="languageS == 'en' || !languageS" href="https://cdn.ipbank.vip/pdf/ipbank_wp_en.pdf" target="_blank" class="btn">{{'main.bg1T1' | translate}}</a>
+                <a *ngIf="languageS == 'kr'" href="https://cdn.ipbank.vip/pdf/ipbank_wp_kr.pdf" target="_blank" class="btn">{{'main.bg1T1' | translate}}</a>
+                <a *ngIf="languageS == 'jp'" href="https://cdn.ipbank.vip/pdf/ipbank_wp_jp.pdf" target="_blank" class="btn">{{'main.bg1T1' | translate}}</a>
+            </div>
+        </div>
+    </div>
+    <!-- 特点 -->
+    <div class="bg1-1 bg1-3" name='anchor2' role='anchor'>
+        <div class="welcome-text font2">
+            <div class="row2-main">
+                <div class="row2-col">
+                    <div><img src="./assets/img/bg2-col-1.svg"></div>
+                    <div class="row2-col-t1" [innerHTML]="'main.bg2Title1' | translate"></div>
+                    <div class="row2-col-t2">{{'main.bg2Connect1' | translate}}</div>
+                </div>
+                <div class="row2-col">
+                    <div><img src="./assets/img/bg2-col-2.svg"></div>
+                    <div class="row2-col-t1" [innerHTML]="'main.bg2Title2' | translate"></div>
+                    <div class="row2-col-t2">{{'main.bg2Connect2' | translate}}</div>
+                </div>
+                <div class="row2-col">
+                    <div><img src="./assets/img/bg2-col-3.svg"></div>
+                    <div class="row2-col-t1" [innerHTML]="'main.bg2Title3' | translate"></div>
+                    <div class="row2-col-t2">{{'main.bg2Connect3' | translate}}</div>
+                </div>
+                <div class="row2-col">
+                    <div><img src="./assets/img/bg2-col-4.svg"></div>
+                    <div class="row2-col-t1" [innerHTML]="'main.bg2Title4' | translate"></div>
+                    <div class="row2-col-t2">{{'main.bg2Connect4' | translate}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+
+<!-- 生态体系 -->
+<div class="shtai" name='anchor3' role='anchor'>
+    <div class="shtai-main container">
+        <div class="shtai-connect container">
+            <div class="shtai-left">
+                <h4 class="h4-tip h4-tip3">
+                    <div><img src="./assets/img/bg3-tip.png" /></div>
+                    {{'main.bg3T1' | translate}}
+                </h4>
+                <div class="shtai-tip1">{{'main.bg3N9' | translate}}<span class="shtai-tip1-s1"></span></div>
+                <p>{{'main.bg3N10' | translate}}</p>
+                <p>{{'main.bg3N11' | translate}}</p>
+                <p>{{'main.bg3N12' | translate}}</p>
+                <p>{{'main.bg3N13' | translate}}</p>
+                <p>{{'main.bg3N14' | translate}}</p>
+                <p>{{'main.bg3N15' | translate}}</p>
+            </div>
+            <div class="shtai-right">
+                <!-- <img src="./assets/img/bg3-r-en.png" /> -->
+                <!-- <img *ngIf="languageS == 'zh'" src="./assets/img/bg3-r-cn.png" alt=""> -->
+                <img *ngIf="languageS == 'en' || !languageS" src="./assets/img/bg3-r-en.png" alt="">
+                <img *ngIf="languageS == 'kr'" src="./assets/img/bg3-r-kr.png" alt="">
+                <img *ngIf="languageS == 'jp'" src="./assets/img/bg3-r-jp.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- market -->
+<div class="market">
+    <div class="market-main">
+        <div class="market-box">
+            {{'main.marketTip1' | translate}} <b>4000</b>
+            {{'main.marketTip2' | translate}} <b>5000</b>
+            {{'main.marketTip3' | translate}} <b>40%</b>
+            {{'main.marketTip4' | translate}} <b>70</b>
+            {{'main.marketTip5' | translate}} <b>3</b>
+            {{'main.marketTip6' | translate}} 
+        </div>
+    </div>
+</div>
+
+<!-- 代币机制 -->
+<div class="bg5 container" name='anchor4' role='anchor'>
+    <div class="connect ">
+        <div class="connect-row connect-l1">
+            <h4 class="h4-tip h4-tip6">
+                <div><img src="./assets/img/bg3-tip.png" /></div>
+                {{'main.bg4T1' | translate}}
+            </h4>
+            <div class="connect-row-t1">{{'main.bg4N5' | translate}}</div>
+            <div class="shtai-tip1">{{'main.bg4N6' | translate}}<span class="shtai-tip1-s1"></span></div>
+
+            <div class="connect-row-t2">{{'main.bg4N1' | translate}}</div>
+            <p class="connect-row-p">{{'main.bg4N2-1' | translate}}</p>
+            <p class="connect-row-p">{{'main.bg4N2-2' | translate}}</p>
+            <p class="connect-row-p">{{'main.bg4N2-3' | translate}}</p>
+            <p class="connect-row-p">{{'main.bg4N2-4' | translate}}</p>
+            <p class="connect-row-p">{{'main.bg4N2-5' | translate}}</p>
+            <p class="connect-row-p">{{'main.bg4N2-6' | translate}}</p>
+            <p class="connect-row-p">{{'main.bg4N2-7' | translate}}</p>
+        </div>
+        <div class="connect-row connect-r1">
+            <img src="/assets/img/bg5-1.png" />
+        </div>  
+    </div>
+    <div class="connect">
+        <div class="connect-row connect-l2">
+            <img src="/assets/img/bg5-2.png" />
+        </div>
+        <div class="connect-row connect-r2">
+            <div class="shtai-tip1">{{'main.bg4N7' | translate}} <span class="shtai-tip1-s2"></span></div>
+            <div class="connect-row-t3">{{'main.bg4N3' | translate}}</div>
+            <p class="connect-row-p">{{'main.bg4N4-1' | translate}}</p>
+            <p class="connect-row-p">{{'main.bg4N4-2' | translate}}</p>
+            <p class="connect-row-p">{{'main.bg4N4-3' | translate}}</p>
+            <p class="connect-row-p">{{'main.bg4N4-4' | translate}}</p>
+            <p class="connect-row-p">{{'main.bg4N4-5' | translate}}</p>
+        </div>
+        <div class="connect-row connect-l2-r">
+            <img src="/assets/img/bg5-2.png" />
+        </div>
+          
+    </div>
+</div>
+
+
+
+<!-- 路线图 -->
+<!-- 路线图 -->
+<div class="container-fluid roadmap bg6" name='anchor5' role='anchor'>
+    <div class="container">
+        <h4 class="h4-tip h4-tip6">
+            <div><img src="./assets/img/bg3-tip.png" /></div>
+            {{'main.bg5T1' | translate}}
+        </h4>
+        <div class="img-box-s">
+            <div class="roadmap-box">
+                <div class="img-box-s">
+                    <div class="img-box-s2">
+                        <div class="img-box-s3">
+                            <img *ngIf="languageS == 'zh'" src="./assets/img/roadmap-cn1.png" alt="">
+                            <img *ngIf="languageS == 'en' || !languageS" src="./assets/img/roadmap-en1.png" alt="">
+                            <img *ngIf="languageS == 'kr'" src="./assets/img/roadmap-kr1.png" alt="">
+                            <img *ngIf="languageS == 'jp'" src="./assets/img/roadmap-jp1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 团队 -->
+<div class="container-fluid team team2 font2" name='anchor6' role='anchor'>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 team-col">
+                <h4 class="h4-tip h4-tip6">
+                    <div><img src="./assets/img/bg3-tip.png" /></div>
+                    {{'main.bg6T1' | translate}}
+                </h4>
+                <!-- <div class="team-title">
+                    <p class="p-title">{{'main.bg6T1' | translate}}</p>
+                </div> -->
+                <div class="team-box">
+                    <div class="team-title-box row">
+                        <p class="team-ceo col-sm-6 col-xs-12">
+                            <img src="./assets/img/team1.png" alt="">
+                            <span class="ceo-span1">{{'main.bg6Tip1' | translate}}<br><label>{{'main.bg6J1' | translate}}</label></span>
+                            <span class="ceo-span2">{{'main.bg6N1' | translate}}</span>
+                        </p>
+                        <p class="team-ceo col-sm-6 col-xs-12">
+                            <img src="./assets/img/team2.png" alt="">
+                            <span class="ceo-span1">{{'main.bg6Tip2' | translate}}<br><label>{{'main.bg6J2' | translate}}</label></span>
+                            <span class="ceo-span2">{{'main.bg6N2' | translate}}</span>
+                        </p>
+                    </div>
+                    <div class="team-title-box row">
+                        <p class="team-ceo col-sm-6 col-xs-12">
+                            <img src="./assets/img/team3.png" alt="">
+                            <span class="ceo-span1">{{'main.bg6Tip3' | translate}}<br><label>{{'main.bg6J3' | translate}}</label></span>
+                            <span class="ceo-span2">{{'main.bg6N3' | translate}}</span>
+                        </p>
+                        <p class="team-ceo col-sm-6 col-xs-12">
+                            <img src="./assets/img/team4.png" alt="">
+                            <span class="ceo-span1">{{'main.bg6Tip4' | translate}}<br><label>{{'main.bg6J4' | translate}}</label></span>
+                            <span class="ceo-span2">{{'main.bg6N4' | translate}}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="container-fluid footer-box2">
+    <div class="container">
+        <div *ngIf="sendEmailSatus == 1" class="fonnter-top">
+            <input type="email" (click)="writeEmail()" placeholder="{{'main.footTip1' | translate}}" [(ngModel)]="userEmail" (focus)="setEstatus('focus', false)" (blur)="setEstatus('blur', true)"/>
+            <span *ngIf="buttonStatus" (click)="sendEmail()" >
+                <img src="./assets/img/dy.png" />
+                {{'main.footTip3' | translate}}
+            </span>
+            <span *ngIf="!buttonStatus" class="span" >
+                <img src="./assets/img/dy.png" />
+                {{'main.footTip3' | translate}}
+            </span>
+            <div class="fonnter-error" *ngIf="emailStatus">
+                {{'main.footTip5' | translate}}
+                <span></span>
+            </div>
+        </div>
+        <div *ngIf="sendEmailSatus == 0" class="fonnter-top">
+            <div>
+                {{'main.footTip2' | translate}}
+                <img src="./assets/img/welcome.png" />
+            </div> 
+        </div>
+        <div *ngIf="sendEmailSatus == 2" class="fonnter-top">
+            <div>
+                {{'main.footTip6' | translate}}
+            </div> 
+        </div>
+        <div  class="fonnter-bottom">
+            <span>{{'main.footTip4' | translate}}</span>
+            <span class="fonnter-bottom-r">Copyright © 2008-2019 IPBANK</span>
+        </div>
+    </div>
+    
+</div>

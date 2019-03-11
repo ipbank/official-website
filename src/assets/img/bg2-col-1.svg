@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="组_143829" data-name="组 143829" transform="translate(-2965 890)">
+    <rect id="矩形_5042" data-name="矩形 5042" width="80" height="80" transform="translate(2965 -890)" fill="rgba(255,255,255,0)"/>
+    <g id="组_22739" data-name="组 22739" transform="translate(902.04 -1955.174)">
+      <path id="路径_8522" data-name="路径 8522" d="M245.532,159.812l17-8,17,8Z" transform="translate(1840.928 925.361)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="路径_8538" data-name="路径 8538" d="M2027.46,1070.174l-37,20h73Z" transform="translate(76)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <g id="组_22736" data-name="组 22736" transform="translate(2075.148 1092.784)">
+        <path id="路径_8539" data-name="路径 8539" d="M1994.849,1087.045v3h12v-3" transform="translate(-1994.538 -1086.655)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+        <path id="路径_8541" data-name="路径 8541" d="M0,0V3.665H11.937V0" transform="translate(11.937 37.088) rotate(180)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+        <path id="路径_8540" data-name="路径 8540" d="M1999.416,1091.07v30" transform="translate(-1997.105 -1087.681)" fill="none" stroke="#fff" stroke-width="2.5"/>
+        <path id="路径_8542" data-name="路径 8542" d="M1998.989,1091.07v30" transform="translate(-1989.678 -1087.681)" fill="none" stroke="#fff" stroke-width="2.5"/>
+      </g>
+      <g id="组_22737" data-name="组 22737" transform="translate(2097.43 1092.784)">
+        <path id="路径_8539-2" data-name="路径 8539" d="M1994.568,1087.045v3h12v-3" transform="translate(-1994.538 -1086.655)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+        <path id="路径_8541-2" data-name="路径 8541" d="M0,0V3.665H11.937V0" transform="translate(11.937 37.088) rotate(180)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+        <path id="路径_8540-2" data-name="路径 8540" d="M1999.134,1091.07v30" transform="translate(-1997.105 -1087.681)" fill="none" stroke="#fff" stroke-width="2.5"/>
+        <path id="路径_8542-2" data-name="路径 8542" d="M1999.707,1091.07v30" transform="translate(-1989.678 -1087.681)" fill="none" stroke="#fff" stroke-width="2.5"/>
+      </g>
+      <g id="组_22738" data-name="组 22738" transform="translate(2119.712 1092.784)">
+        <path id="路径_8539-3" data-name="路径 8539" d="M1994.286,1087.045v3h12v-3" transform="translate(-1994.538 -1086.655)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+        <path id="路径_8541-3" data-name="路径 8541" d="M0,0V3.665H11.937V0" transform="translate(11.937 37.088) rotate(180)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+        <path id="路径_8540-3" data-name="路径 8540" d="M1999.852,1091.07v30" transform="translate(-1997.105 -1087.681)" fill="none" stroke="#fff" stroke-width="2.5"/>
+        <path id="路径_8542-3" data-name="路径 8542" d="M1999.425,1091.07v30" transform="translate(-1989.678 -1087.681)" fill="none" stroke="#fff" stroke-width="2.5"/>
+      </g>
+      <g id="矩形_278" data-name="矩形 278" transform="translate(2067.959 1129.674)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+        <rect width="71" height="10" stroke="none"/>
+        <rect x="1.25" y="1.25" width="68.5" height="7.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

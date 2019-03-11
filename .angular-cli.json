@@ -1,0 +1,64 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "apps": [
+    {
+      "assets": ["assets", "favicon.ico","mockData"],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      },
+      "index": "index.html",
+      "main": "main.ts",
+      "outDir": "dist",
+      "polyfills": "polyfills.ts",
+      "prefix": "",
+      "root": "src",
+      "scripts": [],
+      "serviceWorker": true,
+      "styles": ["styles.scss", "assets/scss/icon.scss"],
+      "testTsconfig": "tsconfig.spec.json",
+      "tsconfig": "tsconfig.app.json",
+      "stylePreprocessorOptions": {
+        "includePaths": ["assets/scss/*"]
+      }
+    }
+  ],
+  "defaults": {
+    "class": {
+      "spec": false
+    },
+    "component": {
+      "inlineStyle": false,
+      "inlineTemplate": false,
+      "spec": false
+    },
+    "directive": {
+      "spec": false
+    },
+    "guard": {
+      "spec": false
+    },
+    "module": {
+      "spec": false
+    },
+    "pipe": {
+      "spec": false
+    },
+    "service": {
+      "spec": false
+    },
+    "styleExt": "scss"
+  },
+  "project": {
+    "name": "ipbank-portal"
+  },
+  "warnings": {
+    "typescriptMismatch": false
+  },
+  "scripts": [
+    "node_modules/echarts/dist/echarts.js",
+    "node_modules/highcharts/highcharts.js"
+  ]
+
+}
